@@ -4,13 +4,17 @@ import java.util.Scanner;
 
 public class MethodDemo1 {
     public static void main(String[] args) {
-        getMax();
+        System.out.println("开始");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int Max = getMax(a,b);
+        System.out.println("最大值是"+Max);
     }
 
-    public static void getMax() {
-        int num1 = 10;
-        int num2 = 20;
+    public static int getMax(int num1,int num2) {
+
         int max = num1 > num2 ? num1 : num2;
-        System.out.println(max);
+        return max;
     }
 }
